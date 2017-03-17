@@ -37,8 +37,8 @@ class Item extends Model
     public $belongsTo = [
         'product' => [Product::class],
         'size' => [Size::class],
-
-        // 'sizes' => 'Arteriaweb\Catalog\Models\Size',
+        'packaging' => [Packaging::class],
+        'unit' => [Unit::class],
     ];
     // public $hasMany = [
     //     'sizes' => 'Arteriaweb\Catalog\Models\Size',

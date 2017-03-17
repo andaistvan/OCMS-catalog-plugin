@@ -32,15 +32,9 @@ class Size extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    // public $hasMany = [
-    //     'items' => 'Arteriaweb\Catalog\Models\Item',
-    // ];
-    // public $belongsTo = [
-    //     'item' => 'Arteriaweb\Catalog\Models\Item',
-    // ];
-    // public $belongsToMany = [
-    //     'items' => 'Arteriaweb\Catalog\Models\Item',
-    // ];
+    public $hasMany = [];
+    public $belongsTo = [];
+    public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];

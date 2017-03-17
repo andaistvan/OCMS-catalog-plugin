@@ -1,4 +1,4 @@
-<?php namespace \Arteriaweb/Catalog\Models;
+<?php namespace Arteriaweb\Catalog\Models;
 
 use Model;
 

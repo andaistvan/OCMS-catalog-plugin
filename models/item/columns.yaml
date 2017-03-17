@@ -7,15 +7,26 @@ columns:
         label: ID
         searchable: true
 
-    qty:
-        label: Quantity
-        type: number
-
-    price:
-        label: Price
-        type: text
+    packaging:
+        label: Packaging
+        relation: packaging
+        select: packaging_name
 
     size:
         label: Size
         relation: size
         select: size_name
+
+    # qty:
+    #     label: Quantity
+    #     type: number
+
+    price:
+        label: Price
+        type: text
+
+    unit:
+        label: Unit
+        relation: unit
+        select: unit_name
+        default: egység
