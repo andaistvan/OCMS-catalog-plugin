@@ -12,6 +12,13 @@ class Product extends Model
      */
     public $table = 'arteriaweb_catalog_products';
 
+
+    /*
+     * Disable timestamps by default.
+     * Remove this line if timestamps are defined in the database table.
+     */
+    public $timestamps = false;
+    
     /**
      * @var array Guarded fields
      */
@@ -25,8 +32,11 @@ class Product extends Model
     /**
      * @var array Relations
      */
+
+    public $hasMany = [
+        'items' => Item::Class
+    ];
     public $hasOne = [];
-    public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [];
     public $morphTo = [];

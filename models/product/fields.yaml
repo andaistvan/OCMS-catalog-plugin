@@ -8,10 +8,25 @@ fields:
         disabled: true
 
     name:
-        label: name
-        sortable: true
-        searchable: true
+        label: Name
         type: text
+        span: left
+
+    slug:
+        label: Slug
+        span: right
+        type: text
+        preset:
+            field: name
+            type: slug
 
     description:
-        label: description        
+        label: description
+        type: textarea
+        size: small
+        span: full
+
+    items:
+        label: Items
+        type: partial
+        path: field_items

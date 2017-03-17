@@ -19,7 +19,7 @@ class Plugin extends PluginBase
             'name'        => 'Catalog',
             'description' => 'OctoberCms - Catalog plugin (Alpha)',
             'author'      => 'Arteriaweb',
-            'icon'        => 'icon-cogs'
+            'icon'        => 'icon-cog'
         ];
     }
 
@@ -86,8 +86,8 @@ class Plugin extends PluginBase
         return [
             'catalog' => [
                 'label'       => 'Catalog (Alpha)',
-                'url'         => Backend::url('arteriaweb/catalog/mycontroller'),
-                'icon'        => 'icon-cogs',
+                'url'         => Backend::url('arteriaweb/catalog/maincontrollers'),
+                'icon'        => 'icon-cog',
                 'permissions' => ['arteriaweb.catalog.*'],
                 'order'       => 500,
             ],

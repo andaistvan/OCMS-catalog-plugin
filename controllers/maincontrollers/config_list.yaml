@@ -3,10 +3,10 @@
 # ===================================
 
 # Model List Column configuration
-list: $/arteriaweb/catalog/models/maincontroller/columns.yaml
+list: $/arteriaweb/catalog/models/product/columns.yaml
 
 # Model Class name
-modelClass: Arteriaweb\Catalog\Models\Maincontroller
+modelClass: Arteriaweb\Catalog\Models\Product
 
 # List Title
 title: Manage Maincontrollers
@@ -32,7 +32,7 @@ showSorting: true
 #     direction: desc
 
 # Display checkboxes next to each record
-# showCheckboxes: true
+showCheckboxes: true
 
 # Toolbar widget configuration
 toolbar:

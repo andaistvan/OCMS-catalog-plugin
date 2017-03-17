@@ -6,10 +6,10 @@
 name: Maincontroller
 
 # Model Form Field configuration
-form: $/arteriaweb/catalog/models/maincontroller/fields.yaml
+form: $/arteriaweb/catalog/models/product/fields.yaml
 
 # Model Class name
-modelClass: Arteriaweb\Catalog\Models\Maincontroller
+modelClass: Arteriaweb\Catalog\Models\Product
 
 # Default redirect location
 defaultRedirect: arteriaweb/catalog/maincontrollers

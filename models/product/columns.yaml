@@ -9,20 +9,10 @@ columns:
         readonly: true
 
     name:
-        label: Name
+        label: name
+        sortable: true
+        searchable: true
         type: text
-        span: left
-
-    slug:
-        label: Slug
-        Span: right
-        type: text
-        preset:
-            field: name
-            type: slug
 
     description:
-        label: description
-        type: textarea
-        size: small
-        span: full
+        label: description        
