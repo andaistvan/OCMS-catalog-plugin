@@ -3,15 +3,14 @@
 use Model;
 
 /**
- * Product Model
+ * Categrie Model
  */
-class Product extends Model
+class Categorie extends Model
 {
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'arteriaweb_catalog_products';
-
+    public $table = 'arteriaweb_catalog_categories';
 
     /*
      * Disable timestamps by default.
@@ -32,30 +31,17 @@ class Product extends Model
     /**
      * @var array Relations
      */
-
-    public $hasMany = [
-        'items' => [Item::class],
-    ];
-
-    public $attachOne = [
-        'featimage' => 'System\Models\File',
-    ];
-
-    public $attachMany = [
-        'imagegallery' => 'System\Models\File',
-    ];
-
     public $hasOne = [
-        // 'categorie' => ['Arteriaweb\Catalog\Models\Categorie', 'key' => 'product_id'],
-        // 'categorie' => ['Arteriaweb\Catalog\Models\Categorie'],
-        // 'categorie' => [Categorie::class],
+        // 'product' => 'Arteriaweb\Catalog\Models\Product',
     ];
+    public $hasMany = [];
     public $belongsTo = [
-        // 'categories' => [Categorie::class],
-        'categorie' => ['Arteriaweb\Catalog\Models\Categorie'],
+        // 'product' => 'Arteriaweb\Catalog\Models\Product',
     ];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
+    public $attachOne = [];
+    public $attachMany = [];
 }

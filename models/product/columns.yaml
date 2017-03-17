@@ -8,6 +8,11 @@ columns:
         searchable: true
         readonly: true
 
+    categories:
+        label: Categorie
+        relation: categorie
+        select: cat_name
+
     name:
         label: name
         sortable: true

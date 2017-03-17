@@ -4,8 +4,7 @@ use Flash;
 use Redirect;
 use BackendMenu;
 use Backend\Classes\Controller;
-
-use Arteriaweb\Catalog\Models\Size;
+use Arteriaweb\Catalog\Models\Packaging;
 
 /**
  * Mycontroller Back-end Controller
@@ -27,16 +26,6 @@ class Mycontrollers extends Controller
         parent::__construct();
 
         BackendMenu::setContext('Arteriaweb.Catalog', 'catalog', 'mycontrollers');
-    }
-
-    public function onValami()
-    {
-        $config = $this->makeConfig('$/Arteriaweb/Catalog/models/size/columns.yaml');
-        $config->model = new \Arteriaweb\Catalog\Models\Size;
-        // $config->recordUrl = 'Arteriaweb/Catalog/mycontroller/update/:id';
-        $widget = $this->makeWidget('Backend\Widgets\Lists', $config);
-        $widget->bindToController();
-        $this->vars['widget'] = $widget;
     }
 
 }

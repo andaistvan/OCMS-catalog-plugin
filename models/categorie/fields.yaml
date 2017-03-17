@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+        span: left
+
+    cat_name:
+        label: Categorie
+        sortable: true
