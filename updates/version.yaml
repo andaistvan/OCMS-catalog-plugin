@@ -1,0 +1,6 @@
+1.0.1: First version of Catalog
+1.0.2:
+    - Add basic tables
+    - create_items_table.php
+    - create_products_table.php
+    

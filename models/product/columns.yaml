@@ -1,0 +1,28 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+        readonly: true
+
+    name:
+        label: Name
+        type: text
+        span: left
+
+    slug:
+        label: Slug
+        Span: right
+        type: text
+        preset:
+            field: name
+            type: slug
+
+    description:
+        label: description
+        type: textarea
+        size: small
+        span: full

@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    name:
+        label: name
+        sortable: true
+        searchable: true
+        type: text
+
+    description:
+        label: description        

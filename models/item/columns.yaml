@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    qty:
+        label: Quantity
+        type: number
+
+    price:
+        label: Price
+        type: text        
