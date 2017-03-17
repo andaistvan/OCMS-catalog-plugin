@@ -3,4 +3,8 @@
     - Add basic tables
     - create_items_table.php
     - create_products_table.php
-    
+1.0.3:
+    - Add data tables
+    - create_sizes_table.php
+    - create_units_table.php
+    - create_packagings_table.php

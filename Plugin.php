@@ -91,6 +91,13 @@ class Plugin extends PluginBase
                 'permissions' => ['arteriaweb.catalog.*'],
                 'order'       => 500,
             ],
+            'mycatalog' => [
+                'label'       => 'MyCatalog (Alpha)',
+                'url'         => Backend::url('arteriaweb/catalog/mycontrollers'),
+                'icon'        => 'icon-bug',
+                'permissions' => ['arteriaweb.catalog.*'],
+                'order'       => 500,
+            ],
         ];
     }
 }

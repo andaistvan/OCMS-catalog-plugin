@@ -1,24 +1,23 @@
-<?php namespace Arteriaweb\Catalog\Models;
+<?php namespace \Arteriaweb/Catalog\Models;
 
 use Model;
 
 /**
- * Product Model
+ * Unit Model
  */
-class Product extends Model
+class Unit extends Model
 {
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'arteriaweb_catalog_products';
-
+    public $table = '_arteriaweb/catalog_units';
 
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
      */
     public $timestamps = false;
-
+    
     /**
      * @var array Guarded fields
      */
@@ -32,23 +31,13 @@ class Product extends Model
     /**
      * @var array Relations
      */
-
-    public $hasMany = [
-        'items' => Item::Class
-    ];
-
-    public $attachOne = [
-        'featimage' => 'System\Models\File',
-    ];
-
-    public $attachMany = [
-        'imagegallery' => 'System\Models\File',
-    ];
-
     public $hasOne = [];
+    public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
+    public $attachOne = [];
+    public $attachMany = [];
 }

@@ -6,14 +6,10 @@ fields:
     id:
         label: ID
         disabled: true
-        span: left
 
-    qty:
-        label: Quantity
-        type: number
+    packaging_name:
+        label: kiszerelés
         span: left
-
-    price:
-        label: Price
-        type: text
-        span: left
+        preset:
+            field: packaging_name
+            type: slug
