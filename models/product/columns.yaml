@@ -3,11 +3,6 @@
 # ===================================
 
 columns:
-    instore:
-        label: raktáron
-        type: switch
-        default: 1
-
     id:
         label: ID
         searchable: true

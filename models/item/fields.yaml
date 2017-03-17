@@ -17,3 +17,8 @@ fields:
         label: Price
         type: text
         span: left
+
+    size:
+        label: Size
+        type: relation
+        nameFrom: size_name

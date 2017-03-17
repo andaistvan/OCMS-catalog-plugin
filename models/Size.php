@@ -1,4 +1,4 @@
-<?php namespace \Arteriaweb/Catalog\Models;
+<?php namespace Arteriaweb\Catalog\Models;
 
 use Model;
 
@@ -10,14 +10,14 @@ class Size extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = '_arteriaweb/catalog_sizes';
+    public $table = 'arteriaweb_catalog_sizes';
 
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
      */
     public $timestamps = false;
-    
+
     /**
      * @var array Guarded fields
      */
@@ -32,9 +32,15 @@ class Size extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [];
-    public $belongsTo = [];
-    public $belongsToMany = [];
+    // public $hasMany = [
+    //     'items' => 'Arteriaweb\Catalog\Models\Item',
+    // ];
+    // public $belongsTo = [
+    //     'item' => 'Arteriaweb\Catalog\Models\Item',
+    // ];
+    // public $belongsToMany = [
+    //     'items' => 'Arteriaweb\Catalog\Models\Item',
+    // ];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];

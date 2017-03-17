@@ -10,7 +10,7 @@ class Packaging extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = '_arteriaweb/catalog_packagings';
+    public $table = 'arteriaweb_catalog_packagings';
 
     /**
      * @var array Guarded fields

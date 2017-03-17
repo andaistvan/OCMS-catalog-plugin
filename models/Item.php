@@ -19,7 +19,7 @@ class Item extends Model
      */
     public $timestamps = false;
 
-    
+
     /**
      * @var array Guarded fields
      */
@@ -28,18 +28,25 @@ class Item extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    // protected $fillable = [];
 
     /**
      * @var array Relations
      */
 
     public $belongsTo = [
-        'product' => Product::class
+        'product' => [Product::class],
+        'size' => [Size::class],
+
+        // 'sizes' => 'Arteriaweb\Catalog\Models\Size',
     ];
-    public $hasOne = [];
-    public $hasMany = [];
-    public $belongsToMany = [];
+    // public $hasMany = [
+    //     'sizes' => 'Arteriaweb\Catalog\Models\Size',
+    // ];
+
+    // public $belongsToMany = [
+    //     'sizes' => 'Arteriaweb\Catalog\Models\Size',
+    // ];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];

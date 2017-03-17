@@ -10,14 +10,14 @@ class Unit extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = '_arteriaweb/catalog_units';
+    public $table = 'arteriaweb_catalog_units';
 
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
      */
     public $timestamps = false;
-    
+
     /**
      * @var array Guarded fields
      */

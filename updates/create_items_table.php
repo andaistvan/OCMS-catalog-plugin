@@ -14,7 +14,7 @@ class CreateItemsTable extends Migration
             $table->integer('product_id')->unsigned()->nullable()->default(null);
             $table->decimal('price', 8)->nullable()->default(null);
             $table->integer('qty')->default(1);
-            $table->string('code');
+            $table->string('code');            
         });
     }
 

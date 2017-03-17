@@ -74,6 +74,16 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function registerFormWidgets()
+    {
+        return [
+            'Arteriaweb\Catalog\FormWidgets\Sizebox' => [
+                'label' => 'Sizebox Fields',
+                'code' => 'sizebox',
+            ]
+        ];
+    }
+
     /**
      * Registers back-end navigation items for this plugin.
      *

@@ -13,4 +13,9 @@ columns:
 
     price:
         label: Price
-        type: text        
+        type: text
+
+    size:
+        label: Size
+        relation: size
+        select: size_name

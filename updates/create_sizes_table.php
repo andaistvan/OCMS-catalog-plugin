@@ -11,6 +11,7 @@ class CreateSizesTable extends Migration
         Schema::create('arteriaweb_catalog_sizes', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->integer('item_id')->unsigned()->nullable()->default(null);
             $table->string('size_name');
             $table->string('slug');
             $table->timestamps();
@@ -19,6 +20,6 @@ class CreateSizesTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('_arteriaweb/catalog_sizes');
+        Schema::dropIfExists('arteriaweb_catalog_sizes');
     }
 }
